@@ -1,9 +1,9 @@
 package me.tehnah.collections
 
 fun main() {
-    val joao=funcionario("João",3500.0, "clt")
-    val pedro=funcionario("Pedro",2000.0, "pJ")
-    val maria=funcionario("Maria",4000.0,"clt")
+    val joao=Funcionario("João",3500.0, "clt")
+    val pedro=Funcionario("Pedro",2000.0, "pJ")
+    val maria=Funcionario("Maria",4000.0,"clt")
 
     val funcionarios = listOf(joao, pedro, maria)
 
@@ -26,15 +26,3 @@ fun main() {
 
 }
 
-data class funcionario(
-    val nome: String,
-    val salario: Double,
-    val tipoContratacao: String
-){
-    override fun toString(): String =
-        //organiza os dados um embaixo do outro como neste exemplo
-        """
-            Nome:    $nome
-            Salario: $salario
-    
-        """.trimIndent() }
